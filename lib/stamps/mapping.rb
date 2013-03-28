@@ -78,14 +78,14 @@ module Stamps
     end
 
     class AddOnsArray < Hashie::Trash
-      property :AddOnV2,     :from => :add_on
+      property :AddOnV3,     :from => :add_on
       def add_on=(vals)
         return unless vals
-        self[:AddOnV2] = vals.map{ |value| AddOnV2.new(value).to_hash }
+        self[:AddOnV3] = vals.map{ |value| AddOnV3.new(value).to_hash }
       end
     end
 
-    class AddOnV2 < Hashie::Trash
+    class AddOnV3 < Hashie::Trash
       property :Amount,                    :from => :amount
       property :AddOnType,                 :from => :type
     end
