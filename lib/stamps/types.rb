@@ -46,10 +46,11 @@ module Stamps
       'US-A-RRM'   => 'Return Receipt for Merchandise',
       'US-A-SC'    => 'USPS Signature Confirmation',
       'US-A-SH'    => 'Special Handling',
-      'US-A-WDS'   => 'USPS Express - Waive Delivery Signature',
+      #'US-A-WDS'   => 'USPS Express - Waive Delivery Signature', - not in V3
       'US-A-NDW'   => 'Do not Deliver on Saturday',
-      'US-A-ESH'   => 'Sunday/Holiday Delivery Guaranteed',
+      #'US-A-ESH'   => 'Sunday/Holiday Delivery Guaranteed', - dup?
       'US-A-NND'   => 'Notice of non-delivery',
+      'US-A-SR'    => 'what is this?'
     }
 
     CARRIER_PICKUP_LOCATION = {
